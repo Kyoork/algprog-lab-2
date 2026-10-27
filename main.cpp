@@ -1,0 +1,31 @@
+#include <iostream>
+#include <cmath>
+#include <clocale>
+
+using namespace std;
+
+int main () {
+setlocale (LC_ALL, "Russian");
+// =============================== ÇÀÄÀ×À 1
+double x, y;
+cout<<"Ââåäèòå ÷èñëî äëÿ X: ";
+cin>>x;
+if (x > -19 && x < 0)
+    y = x - (1.0 / x) + pow(x , 2);
+else if (x >= 0)
+    y = (1 - x) + pow(x , 2);
+else y = pow(tan(13 * x - 1), 3);
+cout << "Ðåçóëüòàò: " << y << endl;
+
+/*=============================== ÇÀÄÀÍÈÅ ÍÀ ËÀÁÎÐÀÒÎÐÍÓÞ ÐÀÁÎÒÓ
+1*/
+cout<<"Ââåäèòå ÷èñëî äëÿ X: ";
+    cin>>x;
+cout<<"Ââåäèòå ÷èñëî äëÿ Y: ";
+    cin>>y;
+if(x < y)
+    x *= 2;
+cout<<"X = "<<x<<endl;
+cout<<"Y = "<<y<<endl;
+    return 0;
+}
